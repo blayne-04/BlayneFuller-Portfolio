@@ -1,0 +1,49 @@
+:root{
+    --accent: #274156;
+    --background: #BFB59E;
+}   
+*{
+    background-color: var(--background);
+}
+h1{ 
+    background-color:var(--accent);
+    font-size: 40px;
+    color: white;
+}
+
+h2{
+    background-color: var(--accent);
+    padding: 40px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent);
+    padding: 15px;
+    font-size: 25px;
+}
+
+.container a{ 
+    background-color: var(--accent);
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    background-color: var(--accent);
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+
+}
+
+.image{
+    display:block;
+}
+
+.about-me{
+    display:block;
+    padding: 200px, 10px;
+}
