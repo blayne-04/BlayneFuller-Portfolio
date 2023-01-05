@@ -1,19 +1,18 @@
 :root{
     --accent: #274156;
     --background: #BFB59E;
+    --text: white;
+    --titles: 30px
 }   
+
 *{
     background-color: var(--background);
 }
+
 h1{ 
     background-color:var(--accent);
     font-size: 40px;
-    color: white;
-}
-
-h2{
-    background-color: var(--accent);
-    padding: 40px;
+    color: var(--text);
 }
 
 .container{
@@ -28,14 +27,14 @@ h2{
 .container a{ 
     background-color: var(--accent);
     text-decoration: none;
-    color: white;
+    color: var(--text);
 }
 
 .navbar{
     background-color: var(--accent);
     display: flex;
-    width: 70%;
-    justify-content: flex-end;
+    width: 60%;
+    justify-content: space-around;
 
 }
 
@@ -43,7 +42,55 @@ h2{
     display:block;
 }
 
-.about-me{
-    display:block;
-    padding: 200px, 10px;
+.containers{
+    display: flex;
+    margin: 25px 50px; 
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutme-title{
+    display:flex;
+    color:var(--accent);
+    font-size: var(--titles);
+    background-color: var(--background);
+    justify-content:flex-end;
+    padding-right:30px;
+    margin-right:40px;
+    border-right : solid 4px var(--accent);
+}
+
+.aboutme-p{
+    display: flex;
+    flex: 1 0 50%;
+    max-width: 84%;
+    background-color: var(--background);
+    justify-content: center;
+}
+
+.projects-title{
+    display:flex;
+    font-size: var(--titles);
+    justify-content: flex-end;
+    color: var(--accent);
+    margin-right:50px;
+
+
+}
+
+.projects-img{
+    display: flex;
+    max-width: 82%;
+    justify-content: flex-end;
+    flex-wrap: wrap; 
+}
+
+.fillers{
+    margin:40px;
+    width:40%;
+    height: 250px;
+}
+#image-1 {
+    width: 96%;
+    height: 500px;
 }
