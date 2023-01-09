@@ -61,9 +61,9 @@
     color: var(--accent);
     font-size: var(--titles);
 }
-/* makes the profile pic round and 100% width of the parent container */
+/* makes the profile pic round and 50% width of the parent container */
 .profilepic {
-    width: 100%;
+    width: 50%;
     border-radius: 50%;
 }
 /* sets the padding on the left side of the text and adds a border, also adjusts the font size and text color */
@@ -75,10 +75,9 @@
     height: 100%
 }
 /* sets the  project title and project img containers beside each other*/
-
 .work {
     display: flex;
-    justify-content: ;
+    justify-content:space-evenly;
 }
 
 .projects-title {
@@ -93,8 +92,11 @@
     grid-template-columns: auto auto;  
     margin-left: 30px;
 }
-.bigpicture{
+.bigpicture {
     grid-column: 1/3;
+}
+.picture {
+    width: 100%;
 }
 .picture img{
     width: 100%;
