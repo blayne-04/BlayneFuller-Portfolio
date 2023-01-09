@@ -53,19 +53,20 @@
 .aboutmesb {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: space-between;
     padding-right: 30px;
+    width: 25%;
 }
 /* sets the title color and font size */
 .aboutme-title {
     color: var(--accent);
     font-size: var(--titles);
-    margin-left: 8%;
+    margin-left: 5%;
     padding-right: 6%;
 }
 /* makes the profile pic round and 50% width of the parent container */
 .profilepic {
-    width: 50%;
+    width: 100%;
     border-radius: 50%;
 }
 /* sets the padding on the left side of the text and adds a border, also adjusts the font size and text color */
@@ -74,51 +75,61 @@
     font-size: 20px;
     color: var(--accent);
     border-left: 3px solid var(--accent);
-    height: 100%
+    width: 75%;
 }
 /* sets the  project title and project img containers beside each other*/
 .work {
     display: flex;
     justify-content:space-between;
 }
-
+/* sets the styling for the project title, adds padding and margin */
 .projects-title {
     color: var(--accent);
     font-size: var(--titles);
     border-right: 3px solid var(--accent);
-    margin-left: 8%;
+    margin-left: 5%;
     padding-right: 6%;
+    width: 23%
+    
 }
-
+/* sets the width of the img container to 75% of the page and allows the images to wrap */
 .projects-img {
     display: flex;
     flex-wrap: wrap;
     width: 75%;
+    padding: 0px 2%;
 }
-
+/* sets the width of the 1st picture to  98% of the page*/
 .bigpicture{
-    width: 100%;
+    width: 98%;
 }
-
+/* sets the width of the anchor tag to 100% of the bigpicture div */
 .bigpicture a{
     width: 100%;
 }
-
+/* sets the width of the img to 100% of the anchor tag */
 .bigpicture img{
     width: 100%;
 }
+/* sets the width of the picture div to 49% of the projects img container */
 .picture {
     width: 49%;
 }
-
+/* sets the width of the anchor tag to 100% of the picture div */
 .picture a{
     width: 100%;
 }
-
+/* sets the width of the img to 100% of the anchor tag */
 .picture img {
     width: 100%;
 }
-
+/* overrides the previous width of 49% when less or equal to 750px wide */
+@media only screen and (max-width: 750px){
+    .picture{
+        width: 100%;
+    }
+}
+/* aligns the title and list elements vertically, stylizes the background */
 .contactme {
     display:flex;
     flex-direction: column;
@@ -127,13 +138,14 @@
     justify-content: center;
     width: 100%;
 }
+/* Stylizes the title for contact me*/
 .contactme-title{
     background-color: var(--accent);
     color: var(--text);
     padding-top: 30px;
     font-size: var(--titles);
 }
-
+/* aligns the items horizontally and spaces them evenly */
 .contactme ul{
     width: 100%;
     display: flex;
@@ -142,7 +154,7 @@
     justify-content: space-around;
     margin-bottom: 3vw;
 }
-
+/* stylizes the list items in contactme */
 .contactme li{
     background-color: var(--accent);
     color: var(--text);
