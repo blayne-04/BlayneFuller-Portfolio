@@ -1,96 +1,142 @@
+/* declares variables for colors and font size */
 :root{
     --accent: #274156;
     --background: #BFB59E;
     --text: white;
     --titles: 30px
 }   
-
+/* sets the background color for the website */
 *{
     background-color: var(--background);
 }
-
-h1{ 
-    background-color:var(--accent);
+/* stylizes my name */
+.name{ 
+    background-color: var(--accent);
     font-size: 40px;
     color: var(--text);
 }
-
-.container{
+/* puts space between my name and the navigation anchor tags, aligns them vertically adds padding, background color and allows the navbar to wrap when it runs out of space*/
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: var(--titles);
     background-color: var(--accent);
-    padding: 15px;
-    font-size: 25px;
+    flex-wrap:wrap;
 }
-
-.container a{ 
+/* sets the background color, space between each li item, allows the items to wrap if they run out of space as well as center themselves  */
+.navbar{
+    display: flex;
+    background-color: var(--accent);
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* puts the list items side by side */
+.navbar li{
+    background-color: var(--accent);
+}
+/* sets the background, text color as well as text decoration for the navbar links */
+.navbar a {
     background-color: var(--accent);
     text-decoration: none;
     color: var(--text);
 }
-
-.navbar{
-    background-color: var(--accent);
+/* puts the aboutmesb and aboutme-p classes side by side and aligns them to the beginning of the container with padding */
+.aboutme {
     display: flex;
-    width: 60%;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: var(--titles)
 }
-
-.image{
-    display:block;
-}
-
-.containers{
+/* sets the aboutme-title above profilepic and aligns them horizontally */
+.aboutmesb {
     display: flex;
-    margin: 25px 50px; 
-    align-items: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+}
+/* sets the title color and font size */
+.aboutme-title {
+    color: var(--accent);
+    font-size: var(--titles);
+}
+/* makes the profile pic round and 100% width of the parent container */
+.profilepic {
+    width: 100%;
+    border-radius: 50%;
+}
+/* sets the padding on the left side of the text and adds a border, also adjusts the font size and text color */
+.aboutme-p {
+    padding-left: 30px;
+    font-size: 20px;
+    color: var(--accent);
+    border-left: 3px solid var(--accent);
+    height: 100%
+}
+/* sets the  project title and project img containers beside each other*/
+/*
+.work {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--titles);
     flex-wrap: wrap;
 }
 
-.aboutme-title{
-    display:flex;
-    color:var(--accent);
+.projects-title {
+    color: var(--accent);
     font-size: var(--titles);
-    background-color: var(--background);
-    justify-content:flex-end;
-    padding-right:30px;
-    margin-right:40px;
-    border-right : solid 4px var(--accent);
+    border-right: 3px solid var(--accent);
+    padding: 0px 50px 100px 100px
 }
 
-.aboutme-p{
+.projects-img {
     display: flex;
-    flex: 1 0 50%;
-    max-width: 84%;
-    background-color: var(--background);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.picture {
+    flex-grow:0;
+    width: calc(50%-5px);
+    padding: 15px;
+}
+
+.picture img {
+    flex-grow:0;
+    width: calc(50%-5px);
+    padding: 15px;
+}
+
+.bigpicture {
+    width: 100%;
+}*/
+
+.contactme {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--accent);
     justify-content: center;
 }
-
-.projects-title{
-    display:flex;
+.contactme-title{
+    background-color: var(--accent);
+    color: var(--text);
+    padding-top: 30px;
     font-size: var(--titles);
-    justify-content: flex-end;
-    color: var(--accent);
-    margin-right:50px;
-
-
 }
 
-.projects-img{
+.contactme ul{
+    width: 100%;
     display: flex;
-    max-width: 82%;
-    justify-content: flex-end;
-    flex-wrap: wrap; 
+    flex-direction: row;
+    background-color: var(--accent);
+    justify-content: space-around;
+    margin-bottom: 3vw;
 }
 
-.fillers{
-    margin:40px;
-    width:40%;
-    height: 250px;
-}
-#image-1 {
-    width: 96%;
-    height: 500px;
+.contactme li{
+    background-color: var(--accent);
+    color: var(--text);
 }

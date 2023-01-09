@@ -9,33 +9,55 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header class="container">
-    <h1>Blayne Fuller</h1>
-    <nav class="navbar">
+    <header class="header">
+    <h1 class="name">Blayne Fuller</h1>
+    <nav>
         <ul class="navbar">
-            <a href= #aboutme>About Me</a>
-            <a href=>Work</a>
-            <a href=>Resume</a>
-            <a href=>Contact Me</a>
+            <li><a href= #aboutme>About Me</a></li>
+            <li><a href= #work>Work</a></li>
+            <li><a href= "#contactme">Contact Me</a></li>
+            <li><a href= "#">Resume</a></li>
         </ul>
     </nav>
     </header>
-    <hero>
-        <img class="image" src = ./assets/me.jpeg alt="Picture of Blayne Fuller" width = "100%"/>
+     <hero> 
+        <img class="image" src = ./assets/main.jpg alt="minimalist picture of code" width = "100%"/>
     </hero>
-    <div class="containers" id=aboutme>
-        <h2 class="aboutme-title">About Me</h2>
+    <div class="aboutme" id=aboutme>
+        <div class="aboutmesb">
+            <h2 class="aboutme-title">About Me</h2>
+            <img class = "profilepic" src =./assets/profilepic.jpeg alt="profile picure" width = 100%/>
+        </div>
         <p class="aboutme-p">Hi, my name is Blayne Fuller, I'm a 18 year old recent high school graduate who's currently studying to become a full stack web developer, some of my hobbies include playing musical instruments like the piano and trumpet and playing video games, I also enjoy learning new things and solving problems </p>
     </div>
-    <div class="containers">
+     <div class="work" id="work"> 
         <h2 class="projects-title">Projects</h2>
         <div class="projects-img">
-            <a href="https://github.com/blayne-04"> <img class="fillers" id="image-1" src= "./assets/filler-image.png" alt= "5 pictures that say Coming Soon"></a>
-            <a href="https://github.com/blayne-04"><img class= "fillers" src="./assets/filler-image.png"></a>
-            <a href="https://github.com/blayne-04"><img class= "fillers" src="./assets/filler-image.png"></a>
-            <a href="https://github.com/blayne-04"><img class= "fillers" src="./assets/filler-image.png"></a>
-            <a href="https://github.com/blayne-04"><img class= "fillers" src="./assets/filler-image.png"></a>
+            <div class="picture bigpicture">
+                <a href="https://github.com/blayne-04 " target=_blank><img src= "./assets/filler-1.jpg" alt= "Picture of project 1"></a>
+            </div>
+            <div class="picture">
+                <a href="https://github.com/blayne-04" target=_blank><img src="./assets/filler-2.jpg" alt="Picture of project 2"></a>
+            </div>
+            <div class="picture">
+                <a href="https://github.com/blayne-04" target=_blank><img src="./assets/filler-3.jpg" alt="Picture of project 3"></a>
+            </div>
+            <div class="picture">
+                <a href="https://github.com/blayne-04" target=_blank><img src="./assets/filler-4.jpg" alt="Picture of project 4"></a>
+            </div>
+            <div class="picture">
+                <a href="https://github.com/blayne-04" target=_blank><img src="./assets/filler-5.jpg" alt="Picture of project 5"></a>
+            </div>
         </div>
+    </div>
+     <div>
+        <div class="contactme">
+            <h2 class="contactme-title">Contact Me</h2> 
+            <ul>
+                <li>Mobile Number: 360-581-6455  </li>
+                <li>Email: befuller2004@gmail.com</li>
+            </ul>
+        </div>    
     </div>
 </body>
 </html>
