@@ -75,12 +75,10 @@
     height: 100%
 }
 /* sets the  project title and project img containers beside each other*/
-/*
+
 .work {
     display: flex;
     justify-content: space-between;
-    padding: var(--titles);
-    flex-wrap: wrap;
 }
 
 .projects-title {
@@ -91,34 +89,31 @@
 }
 
 .projects-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit),minmax(200px 1fr);
 }
 
-.picture {
-    flex-grow:0;
-    width: calc(50%-5px);
-    padding: 15px;
-}
-
-.picture img {
-    flex-grow:0;
-    width: calc(50%-5px);
-    padding: 15px;
-}
-
-.bigpicture {
+.picture{
+    float: left;
     width: 100%;
-}*/
+    padding: 5px;
+    min-height: 100px
+}
 
+.bigpicture{
+    grid-column: 1/3;
+}
+
+@media only screen and (max-width: 756px){
+
+}
 .contactme {
     display:flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--accent);
     justify-content: center;
+    width: 100%;
 }
 .contactme-title{
     background-color: var(--accent);
